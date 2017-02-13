@@ -15,6 +15,13 @@
 		-webkit-overflow-scrolling: touch;
 	}
 
+  html::before{
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  }
 	html{
 		height:100%;
 		background: url(https://www.escapadarural.com/blog/wp-content/uploads/2015/04/4844354186_bcfcb14b32_o.jpg); no-repeat center bottom fixed;
@@ -70,7 +77,7 @@
 		font-family: 'Lobster';
 		font-weight: 400;
 		font-style: ;
-				font-size: 48px;
+				font-size: 40px;
 		color:#ffffff;
 		line-height: 1.00em;
 	}
@@ -100,6 +107,7 @@
 	#cspio-subscribe-btn:hover{
 	    background: rgba(255,255,255,0.2);
 	    color: #fff;
+      cursor: pointer;
 	}
   #cspio-body{
     text-align: center;
@@ -108,7 +116,7 @@
 
   #cspio-description{
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
   #cspio-privacy{
     color: #ffffff;
@@ -117,6 +125,10 @@
   #message, #message-error{
     color: #ffffff;
     font-family: 'Bitter';
+  }
+  #cspio-logo{
+    width: 12%;
+    margin: auto 40%;
   }
 
   </style>
@@ -129,10 +141,12 @@
 <!-- Google Analytics Code Goes Here-->
 </head>
 <body>
+  <img id="cspio-logo" src="img/logo.png">
+
 <div id="cspio-page">
   <div id="cspio-content">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V_YlZ1JdcVk" frameborder="0" allowfullscreen></iframe>
+<iframe width="520" height="315" src="https://www.youtube.com/embed/V_YlZ1JdcVk" frameborder="0" allowfullscreen></iframe>
 <div id="cspio-body">
 
     <h1 id="cspio-headline">Coming Soon App</h1>
@@ -144,6 +158,7 @@
         <div class="row">
           <div class="col-md-12 seperate"><div class="input-group"><input id="cspio-email" name="EMAIL" class="form-control input-lg form-el" type="email" placeholder="Email"/>
         <span class="input-group-btn"><button id="cspio-subscribe-btn" type="submit" class="btn btn-lg btn-primary form-el noglow">Notify Me</button></span></div></div>
+
         <span id="message">Email Saved!</span>
         <span id="message-error">Email Invalid</span>
 
