@@ -77,7 +77,7 @@
 		font-family: 'Lobster';
 		font-weight: 400;
 		font-style: ;
-				font-size: 40px;
+				font-size: 36px;
 		color:#ffffff;
 		line-height: 1.00em;
 	}
@@ -114,13 +114,21 @@
     margin-right: 60px;
   }
 
+  #cspio-socialprofiles a {
+    color: #ffffff;
+    position: relative;
+    bottom: 12px;
+  }
+
   #cspio-description{
     color: #ffffff;
     margin-bottom: 1px;
   }
   #cspio-privacy{
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
+    position: relative;
+    bottom: 15px;
   }
   #message, #message-error{
     color: #ffffff;
@@ -138,6 +146,8 @@
 
 <!-- Modernizr -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
 <!-- Google Analytics Code Goes Here-->
 </head>
 <body>
@@ -168,6 +178,9 @@
     <script src="insert.js"></script>
 
     <span id="cspio-privacy">We promise to never spam you.</span>
+    <div id="cspio-socialprofiles">
+      <a href="https://www.facebook.com/wherenowperu/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+    </div>
 
   <!--	<div id="cspio-socialprofiles">
       <a href="" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
